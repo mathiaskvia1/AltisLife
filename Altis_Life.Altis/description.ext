@@ -1,4 +1,4 @@
-author = "Tonic";
+author = "Tonic & Atlantic Network";
 loadScreen = "textures\armalife.jpg";
 joinUnassigned = 1;
 respawn = BASE;
@@ -13,7 +13,7 @@ class Header
 {
 	gameType = RPG;
 	minPlayers = 1;
-	maxPlayers = 75;
+	maxPlayers = 100;
 };
 
 wreckLimit = 3;
@@ -23,19 +23,19 @@ corpseLimit = 150;
 corpseRemovalMinTime = 999;
 corpseRemovalMaxTime = 9999;
 
-#include "Config_Spyglass.hpp"
-#include "CfgRemoteExec.hpp"
-#include "dialog\MasterHandler.hpp"
-#include "Config_Master.hpp"
+#include "AN\SYSTEM\ServerConfig\Config_Spyglass.hpp"
+#include "AN\SYSTEM\ServerConfig\Config_RemoteExec.hpp"
+#include "AN\SYSTEM\ServerGUI\\MasterHandler.hpp"
+#include "AN\SYSTEM\ServerConfig\Config_Master.hpp"
 
 class RscTitles {
-	#include "dialog\progress.hpp"
-	#include "dialog\hud_nameTags.hpp"
-	#include "dialog\hud_stats.hpp"
+	#include "AN\SYSTEM\ServerGUI\progress.hpp"
+	#include "AN\SYSTEM\ServerGUI\hud_nameTags.hpp"
+	#include "AN\SYSTEM\ServerGUI\hud_stats.hpp"
 };
 
 class CfgFunctions {
-	#include "Functions.hpp"
+	#include "AN\SYSTEM\Functions.hpp"
 };
 
 class CfgSounds
@@ -44,28 +44,28 @@ class CfgSounds
 	class SirenLong
 	{
 		name = "SirenLong";
-		sound[] = {"\sounds\Siren_Long.ogg", 1.0, 1};
+		sound[] = {"\AN\SYSTEM\ServerAudio\Siren_Long.ogg", 1.0, 1};
 		titles[] = {};
 	};
 
 	class medicSiren
 	{
 		name = "medicSiren";
-		sound[] = {"\sounds\medic_siren.ogg", 1.0, 1};
+		sound[] = {"\AN\SYSTEM\ServerAudio\medic_siren.ogg", 1.0, 1};
 		titles[] = {};
 	};
 
 	class tazersound
 	{
 		name = "Tazersound";
-		sound[] = {"\sounds\tazer.ogg", 0.25, 1};
+		sound[] = {"\AN\SYSTEM\ServerAudio\tazer.ogg", 0.25, 1};
 		titles[] = {};
 	};
 
 	class flashbang
 	{
 		name = "flashbang";
-		sound[] = {"\sounds\flashbang.ogg", 1.0, 1};
+		sound[] = {"\AN\SYSTEM\ServerAudio\flashbang.ogg", 1.0, 1};
 		titles[] = {};
 	};
 };

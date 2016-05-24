@@ -5,4 +5,4 @@
 	Starts the initialization of the server.
 */
 if(!(_this select 0)) exitWith {}; //Not server
-[] call compile PreprocessFileLineNumbers "\life_server\init.sqf";
+[] call compile PreprocessFileLineNumbers "\Atlantic_Server\init.sqf";
